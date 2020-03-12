@@ -1,0 +1,170 @@
+/* 
+    Created on : 07/03/2020, 10:36:14
+    Author     : Beatriz
+*/  
+@charset "UTF-8";
+
+body#b{
+    background-color:#8B5742;
+    color: rgba(0,0,0,1);
+}         
+p {
+    text-align: justify;
+    text-indent: 50px; 
+}
+/* MENU NAVBAR*/
+nav#menu {
+    display:block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top:0px;
+    right:268px; 
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #CDB79E;
+    padding:10px; 
+    transition: background-color 1s;
+}
+nav#menu li:hover{
+    background-color: #8B706B;
+}   
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+div#interface{
+    width:1000px;    
+    background-color: #ffffff;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); 
+    padding: 10px;
+}
+/*CABEÇALHO*/
+header#cabecalho img#icone{
+    position:absolute;
+    left: 990px;
+    top:40px;
+}
+header#cabecalho img#logo{
+    position: absolute;
+    left:260px;
+    top:0px;
+}
+header#cabecalho{
+    border-bottom: 1px #606060 dotted;
+    height: 150px;
+}
+header#cabecalho {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+/* 2 FOTO CAROUSEL*/
+div#texto{
+    color: red;
+    left:-20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* FORMATAÇÃO DE IMAGENS COM LEGENDA*/
+figure.foto-legenda{
+    border:8px solid white;
+    box-shadow: 1px 1px 4px black;
+    width:600px;    
+}   
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top:17px;
+    background: rgba(0, 0, 0, .4);
+    color: white;
+    width: 116%;
+    height: 91%;
+    padding: 10px;
+    transition: opacity 1s;
+    box-sizing: border-box;
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;   
+}
+/*RODAPE*/
+footer#rodape{
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    text-align: center;
+}
+/*ARTIGO*/
+article#prod h2{
+    color:#606060;
+    background-color:#dddddd;
+    padding: 10px;
+    text-align: center;
+}
+p#tfoto {
+    text-align: justify;
+    text-indent: 150px; 
+}
+img, picture,embed{
+       max-width: 100%;
+}
+div#t{
+    width:1000px;
+}
+/*FT ZOOM*/
+ul#ft{
+    width: 700px;
+    margin: 0 auto;
+    padding:50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#ft li{
+    float: left;
+    width:200px;
+    height:200px;
+    margin:10px;
+    border:5px solid white;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .4s ease-in;
+}
+ul#ft li span{
+    opacity:0;
+    color:#ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0,0,0,.3);
+    font-size:9pt;
+    line-height:370px;    
+    padding:5px;
+}
+ul#ft li:hover{
+    -webkit-transform: scale(1.5);
+}
+ul#ft li:hover span{
+    opacity:1;
+}
+ul#ft li#ft1{
+    background: url('.../f5.jpg') no-repeat;
+    backgroung-position: 50% 50%;
+    background-size:  1200px 1200px;
+    background-color: #ffffff;  
+}
+ul#ft li#ft2{
+    background: url('.../f7.jpg') no-repeat;
+    backgroung-position: 50% 50%;
+    background-size:  1200px 1200px;
+    background-color: #ffffff;  
+}
+ul#ft li#ft1:hover{
+    background-position: 0px 0px;
+    background-size:200px 200px;
+}
